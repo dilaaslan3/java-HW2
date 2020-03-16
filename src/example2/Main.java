@@ -3,11 +3,14 @@ package example2;
 public class Main {
 	public static void main(String[] args) {
 		
-		Individual individual = new Individual("Dila Aslan");
-		Corporation corporation = new Corporation("REENGEN");
+		Account account[] = new Account[2];
 		
-		System.out.println(individual.usage());
-		System.out.println(corporation.usage());
+		account[0] = new Corporation("REENGEN");
+		account[1] = new Individual("Dila Aslan");
+		
+		
+		System.out.println(account[0].usage());
+		System.out.println(account[1].usage());
 		
 	}
 }
